@@ -3,9 +3,9 @@
     --azul: #4F67F9;
     --azul-baby: #DFE8FA;
     --purpura: #7695FC;
-    --purpura-oscuro: #3e5cbe;
+    --purpura-oscuro: #2e4696;
     --fucsia: #F0519F;
-    --fucsia-oscuro: #4c0f2c;
+    --fucsia-oscuro: #3f0a24;
     --lila: #B8C1F8;
     --blanco: #FFFFFF;
     --negro: #000000;
@@ -22,7 +22,7 @@
 }
 
 .btn {
-    width: 30%;
+    width: 16rem;
     padding: .2rem;
     font-size: 2rem;
     font-family: var(--principal);
