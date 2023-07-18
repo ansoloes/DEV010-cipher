@@ -1,14 +1,53 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Cesar</title>
+    <!-- Fuente Principal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Fuente Títulos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <!-- Ícono de Copiado -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- Hoja de Estilos General -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div class="contenedor-app">
+            <img src="img/cipher.png" alt="Logo" class="logo">
+            <section class="seccion-cifrado">
+                <h1>Cifrado Cesar</h1>
+                <div class="campo">
+                    <form id="form-cifrado" autocomplete="off">
+                        <label for="mensaje">Mensaje:</label>
+                        <input id="mensaje" type="text" spellcheck="false" placeholder="Ingresa un Mensaje">
+                    </form>
+                </div>
+                <div class="campo">
+                    <label for="desplazamiento">Define el desplazamiento del cifrado:</label>
+                    <div class="contenedor-rango">
+                        <input id="desplazamiento" type="range" min="1" max="26" value="13" oninput="this.nextElementSibling.value = this.value">
+                        <output>13</output>
+                    </div>
+                </div>
+                <div class="contenedor-texto-cifrado">
+                    <span class="material-symbols-outlined">content_copy</span>
+                    <p>No se ha detectado ningún mensaje</p>
+                </div>
+                <div class="contenedor-boton">
+                    <button class="btn btn-cifrar">Cifrar</button>
+                    <button class="btn btn-descifrar">Descifrar</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="script/index.js"></script>
+    <script src="script/cipher.js"></script>
+</body>
 </html>
