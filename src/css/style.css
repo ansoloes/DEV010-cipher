@@ -1,11 +1,11 @@
 :root {
     /* Colores */
     --azul: #4F67F9;
-    --azul-baby: #DFE8FA;
+    --azul-baby: #b6c6e5;
     --purpura: #7695FC;
     --purpura-oscuro: #2e4696;
     --fucsia: #F0519F;
-    --fucsia-oscuro: #3f0a24;
+    --fucsia-oscuro: #280415;
     --lila: #B8C1F8;
     --blanco: #FFFFFF;
     --negro: #000000;
@@ -53,6 +53,7 @@ body {
     margin: 0;
 }
 
+/* App */
 main {
     display: flex;
     justify-content: center;
@@ -187,6 +188,7 @@ input[type='range']::-webkit-slider-thumb {
     background-color: var(--purpura-oscuro);
 }
 
+/* Background */
 .contenedor-background {
     width: 100%;
     height: 100%;

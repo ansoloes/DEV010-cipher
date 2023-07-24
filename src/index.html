@@ -32,37 +32,42 @@
             <li></li>
         </ul>
     </div>
+
     <main>
         <div class="contenedor-app">
             <img src="img/cipher.png" alt="Logo" class="logo">
+
             <section class="seccion-cifrado">
                 <h1>Cifrado Cesar</h1>
+
                 <div class="campo">
                     <form id="form-cifrado" autocomplete="off">
                         <label for="mensaje">Mensaje:</label>
                         <input id="mensaje" type="text" spellcheck="false" placeholder="Ingresa un Mensaje">
                     </form>
                 </div>
+
                 <div class="campo">
                     <label for="desplazamiento">Define el desplazamiento del cifrado:</label>
                     <div class="contenedor-rango">
-                        <input id="desplazamiento" type="range" min="1" max="26" value="13" oninput="this.nextElementSibling.value = this.value">
-                        <output>13</output>
+                        <input type="range" min="1" max="25" value="1" oninput="this.nextElementSibling.value = this.value">
+                        <output id="desplazamiento">1</output>
                     </div>
                 </div>
+
                 <div class="contenedor-texto-cifrado">
-                    <span class="material-symbols-outlined">content_copy</span>
-                    <p>No se ha detectado ningún mensaje</p>
+                    <span class="material-symbols-outlined" id="btn-copiar">content_copy</span>
+                    <p id="resultado">No se ha detectado ningún mensaje</p>
                 </div>
+                
                 <div class="contenedor-boton">
-                    <button class="btn btn-cifrar">Cifrar</button>
-                    <button class="btn btn-descifrar">Descifrar</button>
+                    <button class="btn btn-cifrar" id="btn-cifrar">Cifrar</button>
+                    <button class="btn btn-descifrar" id="btn-descifrar">Descifrar</button>
                 </div>
             </section>
         </div>
     </main>
 
-    <script src="index.js"></script>
-    <script src="cipher.js"></script>
+    <script src="index.js" type="module"></script>
 </body>
 </html>
