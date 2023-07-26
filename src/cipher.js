@@ -48,7 +48,7 @@ const cipher = {
       } else if ( letra >= 97 && letra <= 122 ) {
         resultado += String.fromCharCode( ( ( letra - 97 - Number( offset ) + 26 ) % 26 ) + 97 );
       } else {
-        resultado += String[ i ];
+        resultado += string[ i ];
       }
     }
     return resultado;
